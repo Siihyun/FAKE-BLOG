@@ -1,0 +1,47 @@
+.toggle-mode {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #ddd;
+  transition-duration: 0.2s;
+}
+
+label .checkbox__span {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition-duration: 0.2s;
+}
+
+input + label {
+  background-color: purple;
+}
+
+input:checked + label {
+  background-color: blue;
+}
+
+input:checked + label span {
+  transform: translateX(26px);
+}
+
+.current-mode {
+  position: absolute;
+  top: 15px;
+}
