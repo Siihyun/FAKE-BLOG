@@ -1,4 +1,18 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .toggle-mode {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -9,7 +23,6 @@ input[type="checkbox"] {
 
 label {
   display: block;
-  position: absolute;
   width: 60px;
   height: 34px;
   border-radius: 17px;
@@ -20,7 +33,7 @@ label {
 label .checkbox__span {
   position: absolute;
   left: 3px;
-  top: 3px;
+  top: 21px;
   z-index: 1;
   width: 28px;
   height: 28px;
@@ -39,9 +52,4 @@ input:checked + label {
 
 input:checked + label span {
   transform: translateX(26px);
-}
-
-.current-mode {
-  position: absolute;
-  top: 15px;
 }

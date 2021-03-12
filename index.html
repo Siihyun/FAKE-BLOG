@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/style.css" />
     <link rel="stylesheet" href="./src/style/toggle.css" />
+    <link rel="stylesheet" href="./src/style/navbar.css" />
+    <script
+      src="https://kit.fontawesome.com/ddf1a04f37.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="main.js"></script>
     <title>Fake Blog</title>
   </head>
   <body>
-    <div class="app">
-      <div class="toggle-mode">
-        <input type="checkbox" id="checkbox" checked />
-        <label for="checkbox"><span class="checkbox__span"></span></label>
-        <p class="current-mode">POST</p>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-blogger-b"></i>
+        <a class="logo_link" href="#">Fake Blog</a>
       </div>
+      <ul class="navbar__icons">
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="app">
+      <section class="toggle-wrapper">
+        <h1 class="current-mode">POST</h1>
+        <div class="toggle-mode">
+          <input type="checkbox" id="checkbox" checked />
+          <label for="checkbox"><span class="checkbox__span"></span></label>
+        </div>
+      </section>
       <section class="post"></section>
       <section class="album invisible"></section>
     </div>
